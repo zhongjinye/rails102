@@ -11,7 +11,7 @@
   <p><%= @group.description %></p>
 
    <table class="table">
-     <thrad>
+     <thead>
        <tr>
           <th>文章内容</th>
           <th>发表者</th>
@@ -29,5 +29,8 @@
       </tbody>
     </table>
 
+    <div class="text-center">
+      <%= will_paginate @posts %>
+    </div>
 
 </div>
