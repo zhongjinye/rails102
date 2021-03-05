@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
   namespace :account do
     resources :groups
-  end 
+    resources :posts 
+  end
 
   resources :groups do
        member do
